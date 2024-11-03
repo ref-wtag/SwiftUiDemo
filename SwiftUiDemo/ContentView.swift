@@ -34,6 +34,7 @@ struct ContentView: View {
             Button("Try Something New") {
                 withAnimation(.easeInOut(duration: 1)) {
                     selected = activities.randomElement() ?? "Archery"
+                    id += 1
                 }
             }.buttonStyle(.borderedProminent)
         }
